@@ -1,0 +1,97 @@
+[2020-12-13 14:40:17] local.ERROR: syntax error, unexpected 'Schema' (T_STRING), expecting ';' or '{' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'Schema' (T_STRING), expecting ';' or '{' at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:73)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Providers\\\\A...')
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(679): spl_autoload_call('App\\\\Providers\\\\A...')
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(613): Illuminate\\Foundation\\Application->resolveProvider('App\\\\Providers\\\\A...')
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('App\\\\Providers\\\\A...')
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#8 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#9 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#10 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 {main}
+"} 
+[2020-12-13 14:41:59] local.ERROR: syntax error, unexpected '}', expecting ';' or '{' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '}', expecting ';' or '{' at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:72)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Providers\\\\A...')
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(679): spl_autoload_call('App\\\\Providers\\\\A...')
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(613): Illuminate\\Foundation\\Application->resolveProvider('App\\\\Providers\\\\A...')
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('App\\\\Providers\\\\A...')
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#8 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#9 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#10 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 {main}
+"} 
+[2020-12-13 14:43:38] local.ERROR: Class 'App\Providers\QueryCollector' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\QueryCollector' not found at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:21)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(616): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2020-12-13 14:44:49] local.ERROR: Class 'Barryvdh\Debugbar\DataCollector\QueryCollector' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Barryvdh\\Debugbar\\DataCollector\\QueryCollector' not found at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:25)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(616): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2020-12-13 14:45:12] local.ERROR: Class 'Barryvdh\Debugbar\DataCollector\QueryCollector' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Barryvdh\\Debugbar\\DataCollector\\QueryCollector' not found at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:25)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(616): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2020-12-13 14:51:50] local.ERROR: Class 'Barryvdh\Debugbar\DataCollector\QueryCollector' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Barryvdh\\Debugbar\\DataCollector\\QueryCollector' not found at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:25)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(616): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2020-12-13 14:52:23] local.ERROR: Class 'App\Providers\QueryCollector' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\QueryCollector' not found at C:\\xampp\\htdocs\\laravel-travel\\app\\Providers\\AppServiceProvider.php:24)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(616): App\\Providers\\AppServiceProvider->register()
+#1 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(App\\Providers\\AppServiceProvider))
+#2 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(156): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(140): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 C:\\xampp\\htdocs\\laravel-travel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\laravel-travel\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
