@@ -42,16 +42,40 @@ php artisan migrate
 
 ## \:open_file_folder:フォルダ構成
 ```
-・application/  
-　　・config/ デフォルトコントローラーの設定やデータベースの設定ファイル等  
-　　・controler/ コントローラーのフォルダ  
-　　・model/ データベース周りの処理フォルダ  
-　　・views/ フロントエンドファイルをまとめたフォルダ
-	・folio/  サイトの検索結果ページ以外をまとめたのフォルダ（管理画面も含む）
-	  ・check/ サイトの検索結果ページをまとめたフォルダ
-・system/ ライブラリやヘルパーを置いているフォルダ  
-・assets/folio/ cssファイルをおいているフォルダ  
-・images/img/ 画像を置いているフォルダ
-・js/ jqueryのコードを置いているフォルダ　
-・index.php　最初にこのファイルを読み込んでください  
+・app/ アプリのメインフォルダ
+　・Http/
+ 　　・Controllers/
+   　　　・HomeController　ログインコントローラー
+     　　・TravelController　メインコントローラー
+     ・Requests/
+         ・ContactRequest お問い合わせのバリデーション
+         ・TravelRequest 写真登録のバリデーション
+　・Mail/
+     ・ContactMail  メール送信の設定
+  ・Models
+     ・Contact お問い合わせのデータベース設定
+     ・Travel 写真登録のデータベース設定
+・bootstrap/ 処理処理やキャッシュ等のフォルダ
+     ・cache/
+         ・config 各種管理ページ設定
+・config/ アプリの設定フォルダ
+     ・adminlte adminlteの設定
+・database/ データベース(マイグレーション)フォルダ
+     ・migrations migrrationフォルダ
+・public/ 画像,JS,CSS等フォルダ
+     ・vender adminlteのjs,css
+・resources/ Blade等(viewの置き場所)フォルダ
+     ・view
+        ・auth/ ログイン等のview
+        ・contact/
+            ・mail お問い合わせメールの送信内容
+        ・mains/ メインページのview
+        ・travel-pages/ ログイン後ページのview
+・routes/ URL設定フォルダ
+      ・web.php route設定ファイル
+・storage/ セッション及びログフォルダ
+・tests/ テスト用フォルダ
+・vendor/ Composerの依存内容フォルダ
+
+.env/ 各種設定
 ```
