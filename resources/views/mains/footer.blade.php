@@ -2,7 +2,7 @@
     <div class="col-md-6 col-md-offset-3">
         <h3>ひとりでいけるモン</h3>
         <p>only can!!<br /> travels happy share you fellrings!!</p>
-        <a href="{{ route('contact') }}" class="stretched-link">お問合せはこちら</a>
+        <a href="{{ route('contact') }}" class="stretched-link">お問い合わせはこちら</a>
         <p class="mt">
             <a href="https://qiita.com/taka-sho0220">
                 <i class="fas fa-search fa-2x fa-fw"></i>
