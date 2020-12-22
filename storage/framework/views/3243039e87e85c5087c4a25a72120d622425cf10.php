@@ -53,24 +53,24 @@
                 </figcaption>
             </figure>
             <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/tokyo.jpg')); ?>" alt="img07" /></a>
+                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/tokyotower.jpg')); ?>" alt="img07" /></a>
                 <figcaption>
                     <h2 class="photostack-title">Tokyo</h2>
                 </figcaption>
             </figure>
             <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/IMG_0119.JPG')); ?>" alt="img08" /></a>
+                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/kobe.JPG')); ?>" alt="img08" /></a>
                 <figcaption>
                     <h2 class="photostack-title">Hyogo</h2>
                 </figcaption>
             </figure>
             <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/IMG_0815.JPG')); ?>" alt="img10" /></a>
+                <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/DSC_0180.JPG')); ?>" alt="img10" /></a>
                 <figcaption>
                     <h2 class="photostack-title">Hiroshima</h2>
                 </figcaption>
                 <figure data-dummy>
-                    <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/DSC_0188.JPG')); ?>" alt="img09" /></a>
+                    <a href="#" class="photostack-img"><img src="<?php echo e(asset('storage/profiles/IMG_0815.JPG')); ?>" alt="img09" /></a>
                     <figcaption>
                         <h2 class="photostack-title">Kyoto</h2>
                     </figcaption>
@@ -189,9 +189,9 @@
                 </li>
                 <!-- end:Item -->
                 <li class="cbp-item identity">
-                    <a class="cbp-caption cbp-lightbox" data-title="Image" href="storage/profiles/IMG_0119.JPG">
+                    <a class="cbp-caption cbp-lightbox" data-title="Image" href="storage/profiles/kobe.jpg">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="<?php echo e(asset('storage/profiles/IMG_0119.JPG')); ?>" alt="" class="img-responsive">
+                            <img src="<?php echo e(asset('storage/profiles/kobe.jpg')); ?>" alt="" class="img-responsive">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
@@ -261,7 +261,6 @@
         <script src="<?php echo e(asset('js/jquery.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/modernizr.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/bootstrap.min.js')); ?>"></script>
-        <script src="<?php echo e(asset('js/validate.js')); ?>"></script>
         <script src="<?php echo e(asset('js/easing.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/cubeportfolio.js')); ?>"></script>
         <script src="<?php echo e(asset('js/classie.js')); ?>"></script>
