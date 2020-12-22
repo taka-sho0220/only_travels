@@ -43,7 +43,7 @@
             <figure data-dummy>
                     <a href="#" class="photostack-img"><img src="{{ asset('storage/profiles/gunma.jpg') }}" alt="img13" /></a>
                     <figcaption>
-                        <h2 class="photostack-title">Gunma/h2>
+                        <h2 class="photostack-title">Gunma</h2>
                     </figcaption>
                 </figure>
             <figure>
