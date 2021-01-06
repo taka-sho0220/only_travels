@@ -189,9 +189,9 @@
                 </li>
                 <!-- end:Item -->
                 <li class="cbp-item identity">
-                    <a class="cbp-caption cbp-lightbox" data-title="Image" href="storage/profiles/kobe.jpg">
+                    <a class="cbp-caption cbp-lightbox" data-title="Image" href="storage/profiles/kobe.JPG">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="{{ asset('storage/profiles/kobe.jpg') }}" alt="" class="img-responsive">
+                            <img src="{{ asset('storage/profiles/kobe.JPG') }}" alt="" class="img-responsive">
                         </div>
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignCenter">
