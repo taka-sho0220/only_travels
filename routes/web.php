@@ -50,4 +50,6 @@ Route::get('/travel/create', function() {
 
 Auth::routes();
 
+Route::get('/guest', 'Auth\LoginController@gestLogin')->name('guest');
+
 Route::get('/home', 'HomeController@index')->name('home');

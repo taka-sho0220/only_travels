@@ -16,6 +16,9 @@
             <a class="btn btn-success" href="{{ route('register') }}">
                 Sign up
             </a>
+            <a class="btn btn-danger" href="{{ route('guest') }}">
+                ゲストログイン
+            </a>
             </div>
         </div>
     </nav>
