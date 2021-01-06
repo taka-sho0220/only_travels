@@ -114,7 +114,7 @@ class TravelController extends Controller
                 'age' => $inputs['age'],
                 'evaluation' => $inputs['evaluation'],
                 'impressions' => $inputs['impressions'],
-                //'photos' => $inputs['photos'],
+                'photos' => $inputs['photos'],
             ]);
             $travel->save();
             \DB::commit();
