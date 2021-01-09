@@ -67,8 +67,8 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 データベース名:travel
 テーブル名:users
 
-|       Column      |     Type     | Null  | key | Default |　Extra       |
-| :---------------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+|       Column      |     Type     | Null  | key | Default |　   Extra    |
+| :---------------: | :----------: | :---: |:---:| :-----: | :----------: |   
 | id                | bigint(20)   | No    | PRI | None    |auto_increment|
 | name              | varchar(191) | No    |     | None    |              |
 | email             | varchar(191) | No    |     | None    |              |
@@ -84,8 +84,8 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 データベース名:travel
 テーブル名:password_resets
 
-|   Column   |     Type     | Null  | key | Default |　Extra       |
-| :--------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+|   Column   |     Type     | Null  | key | Default |　  Extra     |
+| :--------: | :----------: | :---: |:---:|  :---:  | :----------: |   
 | email      | varchar(191) | No    |     | None    |              |
 | token      | varchar(191) | No    |     | None    |              |
 | created_at | timestamp    | Yes   |     | NUll    |              |
@@ -96,8 +96,8 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 データベース名:travel
 テーブル名:contacts
 
-|   Column   |     Type    | Null  | key | Default |　Extra       |
-| :--------: | :---------: | :---: |:---:|  :---:  |    :---:     |   
+|   Column   |     Type    | Null  | key | Default |　  Extra     |
+| :--------: | :---------: | :---: |:---:|  :---:  | :----------: |   
 | id         | bigint(20)  | No    | PRI | None    |auto_increment|
 | name       | varchar(191)| No    |     | None    |              |
 | email      | varchar(191)| No    |     | None    |              |
@@ -111,8 +111,8 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 データベース名:travel
 テーブル名:travels
 
-|   Column    |     Type     | Null  | key | Default |　Extra       |
-| :---------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+|   Column    |     Type     | Null  | key | Default |　  Extra     |
+| :---------: | :----------: | :---: |:---:|  :---:  | :----------: |   
 | id          | bigint(20)   | No    | PRI | None    |auto_increment|
 | name        | varchar(191) | No    |     | None    |              |
 | place       | varchar(191) | No    |     | None    |              |
