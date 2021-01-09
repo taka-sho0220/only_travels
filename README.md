@@ -61,10 +61,75 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 
 ## \:package:データベース設計
 
+
+- 会員登録者データベース
+
+データベース名:travel
+テーブル名:users
+
+|       Column      |     Type     | Null  | key | Default |　Extra       |
+| :---------------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+| id                | bigint(20)   | No    | PRI | None    |auto_increment|
+| name              | varchar(191) | No    |     | None    |              |
+| email             | varchar(191) | No    |     | None    |              |
+| email_verified_at | timestamp    | Yes   |     | Null    |              |
+| password          | varchar(191) | No    |     | None    |              |
+| remember_token    | varchar(100) | Yes   |     | Null    |              |
+| created_at        | timestamp    | Yes   |     | NUll    |              |
+| updated_at        | timestamp    | Yes   |     | Null    |              |
+
+
+- パスワードリセットデータベース
+
+データベース名:travel
+テーブル名:password_resets
+
+|   Column   |     Type     | Null  | key | Default |　Extra       |
+| :--------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+| email      | varchar(191) | No    |     | None    |              |
+| token      | varchar(191) | No    |     | None    |              |
+| created_at | timestamp    | Yes   |     | NUll    |              |
+
+
+- お問い合わせデータベース
+
+データベース名:travel
+テーブル名:contacts
+
+|   Column   |     Type    | Null  | key | Default |　Extra       |
+| :--------: | :---------: | :---: |:---:|  :---:  |    :---:     |   
+| id         | bigint(20)  | No    | PRI | None    |auto_increment|
+| name       | varchar(191)| No    |     | None    |              |
+| email      | varchar(191)| No    |     | None    |              |
+| message    | text        | No    |     | None    |              |
+| created_at | timestamp   | Yes   |     | NUll    |              |
+| updated_at | timestamp   | Yes   |     | Null    |              |
+
+
+- 投稿内容データベース
+
+データベース名:travel
+テーブル名:travels
+
+|   Column    |     Type     | Null  | key | Default |　Extra       |
+| :---------: | :----------: | :---: |:---:|  :---:  |    :---:     |   
+| id          | bigint(20)   | No    | PRI | None    |auto_increment|
+| name        | varchar(191) | No    |     | None    |              |
+| place       | varchar(191) | No    |     | None    |              |
+| gender      | varchar(191) | No    |     | None    |              |
+| age         | varchar(191) | No    |     | None    |              |
+| evaluation  | varchar(100) | No    |     | None    |              |
+| impressions | varchar(191) | No    |     | None    |              |
+| photos      | varchar(100) | Yes   |     | Null    |              |
+| terms       | varchar(191) | No    |     | None    |              |
+| created_at  | timestamp    | Yes   |     | NUll    |              |
+| updated_at  | timestamp    | Yes   |     | Null    |              |
+
+
+
 各種databese設計に関しては、migrationファイル(database/migrations)を作成しております。
 コマンドでマイグレーションを行っていただくと、テーブルが作成できます。
 
-コマンド↓
 ```
 php artisan migrate
 ```
