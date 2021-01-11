@@ -119,8 +119,8 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 | gender      | varchar(191) | No    |     | None    |              |
 | age         | varchar(191) | No    |     | None    |              |
 | evaluation  | varchar(100) | No    |     | None    |              |
-| impressions | varchar(191) | No    |     | None    |              |
-| photos      | varchar(100) | Yes   |     | Null    |              |
+| impressions | text         | No    |     | None    |              |
+| photos      | blob         | Yes   |     | Null    |              |
 | terms       | varchar(191) | No    |     | None    |              |
 | created_at  | timestamp    | Yes   |     | NUll    |              |
 | updated_at  | timestamp    | Yes   |     | Null    |              |
