@@ -16,7 +16,7 @@ class travelTest extends TestCase
      * @return void
      */
     public function testExample()
-    {
+    {        
         $response = $this->get('/');
 
         $response->assertStatus(200)
@@ -27,10 +27,12 @@ class travelTest extends TestCase
         $response->assertStatus(200)
             ->assertViewIs('mains.contact');
 
+        $response = $this->get('/contact/mail');        
+
         $user = factory(User::class)->create();
 
         $response = $this
-            ->actingAs($user) // 追加
+            ->actingAs($user)
             ->get(route('home'));
 
         $response->assertStatus(200)
