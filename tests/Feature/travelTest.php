@@ -2,15 +2,17 @@
 
 namespace Tests\Feature;
 
+use App\User;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class travelTest extends TestCase
 {
+    use DatabaseTransactions;
+
     /**
-     * A basic feature test example.
-     *
      * @return void
      */
     public function testExample()
@@ -24,5 +26,14 @@ class travelTest extends TestCase
 
         $response->assertStatus(200)
             ->assertViewIs('mains.contact');
-        }
+
+        $user = factory(User::class)->create();
+
+        $response = $this
+            ->actingAs($user) // 追加
+            ->get(route('home'));
+
+        $response->assertStatus(200)
+            ->assertViewIs('home');
+        } 
 }
