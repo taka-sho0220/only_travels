@@ -156,13 +156,15 @@ php artisan migrate
          ・config 各種管理ページ設定
          
 ・config/ アプリの設定フォルダ
-     ・adminlte adminlteの設定
+     ・adminlte /adminlteの設定
      
 ・database/ データベース(マイグレーション)フォルダ
-     ・migrations migrrationフォルダ
+     ・factories 
+        ・ContactFactory,TravelFactory,UserFactory　/各データベースのテスト用のファクトリー
+     ・migrations /各migrrationフォルダ
      
 ・public/ 画像,JS,CSS等フォルダ
-     ・vender adminlteのjs,css
+     ・vender /adminlteのjs,css
      
 ・resources/ Blade等(viewの置き場所)フォルダ
      ・view
@@ -178,8 +180,12 @@ php artisan migrate
 ・storage/ セッション及びログフォルダ
 
 ・tests/ テスト用フォルダ
+      ・Unit
+        ・travelTest.php /テスト用ファイル
 
 ・vendor/ Composerの依存内容フォルダ
 
 .env/ 各種設定
+.env.testing /テスト設定
+
 ```
