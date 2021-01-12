@@ -38,7 +38,7 @@ class TravelController extends Controller
     }
     public function showForm()
     {
-        return view('travel-pages.form');
+        return view('travel_pages.form');
     }
     public function showDetail($id)
     {
@@ -48,7 +48,7 @@ class TravelController extends Controller
             \Session::flash('err_msg', 'データがありません。');
             return redirect(route('home'));
         }
-        return view('travel-pages.detail', ['travel' => $travel]);
+        return view('travel_pages.detail', ['travel' => $travel]);
     }
     /**
      * @param int $id
@@ -62,7 +62,7 @@ class TravelController extends Controller
             \Session::flash('err_msg', 'データがありません。');
             return redirect(route('home'));
         }
-        return view('travel-pages.edit', ['travel' => $travel]);
+        return view('travel_pages.edit', ['travel' => $travel]);
     }
     public function exeCreate(TravelRequest $request)
     {
@@ -136,7 +136,7 @@ class TravelController extends Controller
         $yamagatas = Travel::where('place', '山形県')->get();
         $hukushimas = Travel::where('place', '福島県')->get();
 
-            return view('travel-pages.place_parts.hoka_toho')
+            return view('travel_pages.place_parts.hoka_toho')
             ->with('hokkaidous',$hokkaidous)
             ->with('aomoris',$aomoris)
             ->with('iwates',$iwates)
@@ -155,7 +155,7 @@ class TravelController extends Controller
         $tokyos = Travel::where('place', '東京都')->get();
         $kanagawas = Travel::where('place', '神奈川県')->get();
         
-            return view('travel-pages.place_parts.kanto')
+            return view('travel_pages.place_parts.kanto')
             ->with('ibarakis',$ibarakis)
             ->with('tochigis',$tochigis)
             ->with('gunmas',$gunmas)
@@ -176,7 +176,7 @@ class TravelController extends Controller
         $shizuokas = Travel::where('place', '静岡県')->get();
         $aichis = Travel::where('place', '愛知県')->get();
         
-            return view('travel-pages.place_parts.tubu')
+            return view('travel_pages.place_parts.tubu')
             ->with('nigatas',$nigatas)
             ->with('toyamas',$toyamas)
             ->with('ishikawas',$ishikawas)
@@ -197,7 +197,7 @@ class TravelController extends Controller
         $naras = Travel::where('place', '奈良県')->get();
         $wakayamas = Travel::where('place', '和歌山県')->get();
 
-            return view('travel-pages.place_parts.kansai')
+            return view('travel_pages.place_parts.kansai')
             ->with('mies',$mies)
             ->with('shigas',$shigas)
             ->with('kyotos',$kyotos)
@@ -215,7 +215,7 @@ class TravelController extends Controller
         $hiroshimas = Travel::where('place', '広島県')->get();
         $yamaguchis = Travel::where('place', '山口県')->get();
 
-            return view('travel-pages.place_parts.cyugoku')
+            return view('travel_pages.place_parts.cyugoku')
             ->with('tottoris',$tottoris)
             ->with('shimanes',$shimanes)
             ->with('okayamas',$okayamas)
@@ -229,7 +229,7 @@ class TravelController extends Controller
         $ehimes = Travel::where('place', '愛媛県')->get();
         $kouchis = Travel::where('place', '高知県')->get();
 
-            return view('travel-pages.place_parts.shikoku')
+            return view('travel_pages.place_parts.shikoku')
             ->with('tokushimas',$tokushimas)
             ->with('kagawas',$kagawas)
             ->with('ehimes',$ehimes)
@@ -246,7 +246,7 @@ class TravelController extends Controller
         $kagoshimas = Travel::where('place', '鹿児島県')->get();
         $okinawas = Travel::where('place', '沖縄県')->get();
 
-            return view('travel-pages.place_parts.kyu_oki')
+            return view('travel_pages.place_parts.kyu_oki')
             ->with('hukuokas',$hukuokas)
             ->with('sagas',$sagas)
             ->with('nagasakis',$nagasakis)

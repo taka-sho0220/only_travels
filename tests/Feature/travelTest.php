@@ -56,7 +56,7 @@ class travelTest extends TestCase
             ->get(route('detail', [$travel->id]));
         
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.detail');
+            ->assertViewIs('travel_pages.detail');
     }
     /**
      * @test
@@ -70,11 +70,12 @@ class travelTest extends TestCase
         ->get(route('form'));
         
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.form');
+            ->assertViewIs('travel_pages.form');
 
         $reqponse = $this->from('/travel/form')->post('/travel/create',$travel->toArray());
 
-        $response->assertStatus(200);
+        $response->assertStatus(200
+    );
         $this->assertDatabaseHas('travels', ['id' => $travel->id]);
 
     }
@@ -90,7 +91,7 @@ class travelTest extends TestCase
             ->get(route('edit', [$travel->id]));
 
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.edit');
+            ->assertViewIs('travel_pages.edit');
 
         $reqponse = $this->from('/travel/form')->post('/travel/create',$travel->toArray());
 
@@ -120,42 +121,42 @@ class travelTest extends TestCase
             ->get('/travel/hoka_toho');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.hoka_toho');
+            ->assertViewIs('travel_pages.place_parts.hoka_toho');
         
         $response = $this
             ->get('/travel/kanto');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.kanto');
+            ->assertViewIs('travel_pages.place_parts.kanto');
         
         $response = $this
             ->get('/travel/tubu');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.tubu');
+            ->assertViewIs('travel_pages.place_parts.tubu');
         
         $response = $this
             ->get('/travel/kansai');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.kansai');
+            ->assertViewIs('travel_pages.place_parts.kansai');
         
         $response = $this
             ->get('/travel/cyugoku');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.cyugoku');
+            ->assertViewIs('travel_pages.place_parts.cyugoku');
         
         $response = $this
             ->get('/travel/shikoku');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.shikoku');
+            ->assertViewIs('travel_pages.place_parts.shikoku');
         
         $response = $this
             ->get('/travel/kyu_oki');
     
         $response->assertStatus(200)
-            ->assertViewIs('travel-pages.place-parts.kyu_oki');
+            ->assertViewIs('travel_pages.place_parts.kyu_oki');
         }
 }
