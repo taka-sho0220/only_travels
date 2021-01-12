@@ -26,7 +26,7 @@ Route::post('/travel/delete/{id}', 'TravelController@exeDelete')->where('id', '[
 
 Route::get('/travel/form', 'TravelController@showForm')->name('form');
 
-Route::get('/travel/hoka_toho', 'TravelController@showHoka_toho');
+Route::get('/travel/hoka_toho', 'TravelController@showHoka_toho')->name('hoka_toho');
 
 Route::get('/travel/kanto', 'TravelController@showKanto');
 

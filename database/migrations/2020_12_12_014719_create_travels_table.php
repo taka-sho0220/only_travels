@@ -22,7 +22,7 @@ class CreateTravelsTable extends Migration
                 $table->string('age');
                 $table->string('evaluation');
                 $table->text('impressions');
-                $table->blob('photos');
+                $table->binary('photos');
                 $table->string('terms');
                 $table->timestamps();
             });

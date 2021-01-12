@@ -7,7 +7,7 @@
 
 |        トップ画面                |            お問い合わせ画面               |
 |---------------------------------|------------------------------------------|
-|  ![トップ画面](read_img/top.png) | ![お問い合わせ画面](read_img/contact.png) |
+|  ![トップ画面](read_img/main.png) | ![お問い合わせ画面](read_img/contact.png) |
 
 
 |        ログイン画面                   |           新規登録画面               |
@@ -20,14 +20,14 @@
 |  ![管理画面](read_img/admin.png)   |
 
 
-|         投稿フォーム画面                 |           各県投稿写真一覧画面          |
-|-----------------------------------------|---------------------------------------|
-|  ![投稿フォーム画面](read_img/form.png)  | ![各県投稿写真画面](read_img/photo.png) |
+|             投稿フォーム画面            |             投稿写真一覧画面            |
+|----------------------------------------|---------------------------------------|
+|  ![投稿フォーム画面](read_img/form.png) | ![各県投稿写真画面](read_img/photo.png) |
 
 
 |         投稿編集画面                    |           投稿詳細画面                |             投稿削除画面　　         |
 |----------------------------------------|--------------------------------------|-------------------------------------|
-|  ![投稿編集画面](read_img/form.png)     |   ![投稿詳細画面](read_img/photo.png) |  ![投稿削除画面](read_img/delite.png)|
+|  ![投稿編集画面](read_img/edit.png)     |   ![投稿詳細画面](read_img/photo.png) |  ![投稿削除画面](read_img/delite.png)|
 
 
 
@@ -61,10 +61,75 @@ git clone https://github.com/taka-sho0220/laravel-travel.git
 
 ## \:package:データベース設計
 
+
+- 会員登録者データベース
+
+データベース名:travel
+テーブル名:users
+
+|       Column      |     Type     | Null  | key | Default |　   Extra    |
+| :---------------: | :----------: | :---: |:---:| :-----: | :----------: |   
+| id                | bigint(20)   | No    | PRI | None    |auto_increment|
+| name              | varchar(191) | No    |     | None    |              |
+| email             | varchar(191) | No    |     | None    |              |
+| email_verified_at | timestamp    | Yes   |     | Null    |              |
+| password          | varchar(191) | No    |     | None    |              |
+| remember_token    | varchar(100) | Yes   |     | Null    |              |
+| created_at        | timestamp    | Yes   |     | NUll    |              |
+| updated_at        | timestamp    | Yes   |     | Null    |              |
+
+
+- パスワードリセットデータベース
+
+データベース名:travel
+テーブル名:password_resets
+
+|   Column   |     Type     | Null  | key | Default |　  Extra     |
+| :--------: | :----------: | :---: |:---:|  :---:  | :----------: |   
+| email      | varchar(191) | No    |     | None    |              |
+| token      | varchar(191) | No    |     | None    |              |
+| created_at | timestamp    | Yes   |     | NUll    |              |
+
+
+- お問い合わせデータベース
+
+データベース名:travel
+テーブル名:contacts
+
+|   Column   |     Type    | Null  | key | Default |　  Extra     |
+| :--------: | :---------: | :---: |:---:|  :---:  | :----------: |   
+| id         | bigint(20)  | No    | PRI | None    |auto_increment|
+| name       | varchar(191)| No    |     | None    |              |
+| email      | varchar(191)| No    |     | None    |              |
+| message    | text        | No    |     | None    |              |
+| created_at | timestamp   | Yes   |     | NUll    |              |
+| updated_at | timestamp   | Yes   |     | Null    |              |
+
+
+- 投稿内容データベース
+
+データベース名:travel
+テーブル名:travels
+
+|   Column    |     Type     | Null  | key | Default |　  Extra     |
+| :---------: | :----------: | :---: |:---:|  :---:  | :----------: |   
+| id          | bigint(20)   | No    | PRI | None    |auto_increment|
+| name        | varchar(191) | No    |     | None    |              |
+| place       | varchar(191) | No    |     | None    |              |
+| gender      | varchar(191) | No    |     | None    |              |
+| age         | varchar(191) | No    |     | None    |              |
+| evaluation  | varchar(100) | No    |     | None    |              |
+| impressions | text         | No    |     | None    |              |
+| photos      | blob         | Yes   |     | Null    |              |
+| terms       | varchar(191) | No    |     | None    |              |
+| created_at  | timestamp    | Yes   |     | NUll    |              |
+| updated_at  | timestamp    | Yes   |     | Null    |              |
+
+
+
 各種databese設計に関しては、migrationファイル(database/migrations)を作成しております。
 コマンドでマイグレーションを行っていただくと、テーブルが作成できます。
 
-コマンド↓
 ```
 php artisan migrate
 ```
