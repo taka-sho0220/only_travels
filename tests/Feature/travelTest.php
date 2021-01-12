@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\User;
 use App\Models\Travel;
+use App\Models\Contact;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -28,6 +29,19 @@ class travelTest extends TestCase
 
         $response->assertStatus(200)
             ->assertViewIs('mains.contact');
+    }
+    /**
+     * @test
+     * @return void
+     */
+    public function test_mail()
+    {
+        $contact = factory(Contact::class)->create();
+        
+        $response = $this->from('/contact')->post('/contact/mail',$contact->toArray())
+            ->assertredirect();
+
+        $this->assertDatabaseHas('contacts', ['id' => $contact->id]);
     }
     /**
      * @test
@@ -74,8 +88,7 @@ class travelTest extends TestCase
 
         $reqponse = $this->from('/travel/form')->post('/travel/create',$travel->toArray());
 
-        $response->assertStatus(200
-    );
+        $response->assertStatus(200);
         $this->assertDatabaseHas('travels', ['id' => $travel->id]);
 
     }
