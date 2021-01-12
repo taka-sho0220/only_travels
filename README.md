@@ -170,7 +170,7 @@ php artisan migrate
         ・contact/
             ・mail お問い合わせメールの送信内容
         ・mains/ メインページのview
-        ・travel-pages/ ログイン後ページのview
+        ・travel_pages/ ログイン後ページのview
         
 ・routes/ URL設定フォルダ
       ・web.php route設定ファイル
