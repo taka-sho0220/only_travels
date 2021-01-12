@@ -49,6 +49,9 @@
 ```
 
 ## \:closed_lock_with_key:ダウンロード方法
+
+### ダウンロード方法
+
 Githubからダウンロードするかgit cloneしてください。
 
 ダウンロード先
@@ -57,6 +60,13 @@ https://github.com/taka-sho0220/laravel-travel.git
 git cloneする場合
 ```
 git clone https://github.com/taka-sho0220/laravel-travel.git
+```
+### シボリックリンク設定
+
+投稿された画像の保存場所をstoragフォルダ内に保存しております。
+またその画像を読み込む必要性がるときはシボリックリンク設定する必要があるため、下記のコマンドを実行してください。
+```
+php artisan storage:link
 ```
 
 ## \:package:データベース設計
