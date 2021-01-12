@@ -178,6 +178,7 @@ php artisan migrate
       ・web.php route設定ファイル
       
 ・storage/ セッション及びログフォルダ
+      ・app/public/profiles 投稿画像の保存場所(シボリックリンク設定方法:php artisan storage:link)
 
 ・tests/ テスト用フォルダ
       ・Unit
