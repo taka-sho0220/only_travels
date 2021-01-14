@@ -159,6 +159,7 @@
             @endif
         </div>
 
+        <!--写真-->
         <div class="input-group">
             <label class="input-group-btn">
                 <span class="btn btn-primary">

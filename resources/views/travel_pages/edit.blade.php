@@ -157,8 +157,18 @@
             @if($errors->has('impressions'))
                 <div class="invalid-feedback">{{ $errors->first('impressions') }}</div>
             @else
-                <div class="invalid-feedback">必須項目です</div><!--HTMLバリデーション-->
+                <div class="invalid-feedback">必須項目です</div>
             @endif
+        </div>
+
+        <!--写真-->
+        <div class="input-group">
+            <label class="input-group-btn">
+                <span class="btn btn-primary">
+                    Choose File<input type="file" class="form-control @if($errors->has('photos')) is-invalid @endif" name="photos" style="display:none" >
+                </span>
+            </label>
+            <input type="text" class="form-control" name="photos"  value="{{ $travel->photos }}" readonly="">
         </div>
 
         <!--利用規約-->
@@ -171,7 +181,7 @@
                 @if($errors->has('terms'))
                     <div class="invalid-feedback mb-3">{{ $errors->first('terms') }}</div>
                 @else
-                    <div class="invalid-feedback mb-3">提出する前に同意する必要があります</div><!--HTMLバリデーション-->
+                    <div class="invalid-feedback mb-3">提出する前に同意する必要があります</div>
                 @endif
             </div>
         </div>
