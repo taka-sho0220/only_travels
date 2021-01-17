@@ -76,8 +76,10 @@ class TravelController extends Controller
         };
         $inputs['photos'] = $file_name;
         \DB::beginTransaction();
+        
         try {
             Travel::create($inputs);
+            
             \DB::commit();
         } catch (\Throwable $e) {
             \DB::rollback();

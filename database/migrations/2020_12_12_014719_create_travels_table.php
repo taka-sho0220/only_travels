@@ -22,8 +22,14 @@ class CreateTravelsTable extends Migration
                 $table->string('age');
                 $table->string('evaluation');
                 $table->text('impressions');
-                $table->binary('photos');
+                $table->string('photos');
                 $table->string('terms');
+                //外部キー制約
+                $table->integer('prefecture_id')->index();
+                $table->integer('region_id')->index();
+                $table->foreign('prefecture_id')->references('id')->on('prefectures');
+                $table->foreign('region_id')->references('region_id')->on('prefectures'); 
+                $table->unique(['prefecture_id', 'region_id'],'uq_roles');
                 $table->timestamps();
             });
         }
@@ -33,7 +39,7 @@ class CreateTravelsTable extends Migration
      * Reverse the migrations.
      *
      * @return void
-     */
+    */
     public function down()
     {
         Schema::dropIfExists('travels');
