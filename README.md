@@ -144,7 +144,6 @@ php artisan storage:link
 php artisan migrate
 ```
 
-
 ## \:open_file_folder:フォルダ構成
 ```
 ・app/ アプリのメインフォルダ
