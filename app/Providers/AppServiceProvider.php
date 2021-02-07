@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Routing\UrlGenerator;
+use Illuminate\Support\Facades\Request;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,8 +24,13 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
         Schema::defaultStringLength(191);
+        // $url->forceScheme('https');
+        if ('https' == Request::header('x-forwarded-proto')) {
+            $url->forceScheme('https');
+            $this->app['request']->server->set('HTTPS','on');
+        }
     }
 }
